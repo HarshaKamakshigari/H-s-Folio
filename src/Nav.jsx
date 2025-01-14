@@ -1,5 +1,5 @@
 import { useState } from "react";
-import './index.css'
+import './index.css';
 
 const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -9,16 +9,14 @@ const Nav = () => {
   };
 
   return (
-    <nav className="bg-blue-600 p-4">
+    <nav className="bg-gray-300 p-11">
       <div className="container mx-auto flex items-center justify-between">
-        <div className="text-white text-2xl font-bold">My Portfolio</div>
+        <div className="text-black text-2xl font-medium font-Space Grotesk">h's Folio<span className="text-red-600">.</span></div>
 
         {/* Desktop menu */}
-        <div className="hidden md:flex space-x-4">
-          <a href="#home" className="text-white hover:text-gray-300">Home</a>
-          <a href="#about" className="text-white hover:text-gray-300">About</a>
-          <a href="#projects" className="text-white hover:text-gray-300">Projects</a>
-          <a href="#contact" className="text-white hover:text-gray-300">Contact</a>
+        <div className="hidden md:flex space-x-4 font-Space Grotesk ">
+          <a href="#projects" className="text-black hover:text-red-600">Playground</a>
+          <a href="#contact" className="text-black hover:text-red-600">Connect</a>
         </div>
 
         {/* Hamburger menu */}
@@ -43,12 +41,13 @@ const Nav = () => {
       </div>
 
       {/* Mobile menu */}
-      <div className={`${isOpen ? "block" : "hidden"} md:hidden bg-blue-500`}>
-        <a href="#home" className="block text-white p-4">Home</a>
-        <a href="#about" className="block text-white p-4">About</a>
-        <a href="#projects" className="block text-white p-4">Projects</a>
-        <a href="#contact" className="block text-white p-4">Contact</a>
+      <div className={`${isOpen ? "block" : "hidden"} md:hidden bg-gray-300 p-10`}>
+        <a href="#projects" className="block text-black hover:text-red-600 p-4">Playground</a>
+        <a href="#contact" className="block text-black hover:text-red-600 p-4">Connect</a>
       </div>
+
+      {/* Adding a gap between the nav and the line */}
+      <hr className="mt-5 pb-5 border-t-5 border-black" />
     </nav>
   );
 };
