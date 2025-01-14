@@ -15,8 +15,8 @@ const Nav = () => {
 
         {/* Desktop menu */}
         <div className="hidden md:flex space-x-4 font-Space Grotesk ">
-          <a href="#projects" className="text-black hover:text-red-600">Playground</a>
-          <a href="#contact" className="text-black hover:text-red-600">Connect</a>
+          <a href="#projects" className="text-black hover:text-red-600 hover:font-medium">Playground</a>
+          <a href="#contact" className="text-black hover:text-red-600 hover:font-medium">Connect</a>
         </div>
 
         {/* Hamburger menu */}
