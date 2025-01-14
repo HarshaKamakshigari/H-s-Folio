@@ -5,6 +5,7 @@ import Nav from './Nav.jsx'
 import Hero from './hero.jsx'
 import Projects from './Prjs.jsx'
 import Footer from './Footer.jsx'
+import CustomCursor from './cursor.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>

@@ -54,14 +54,10 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          <p className=" text-right text-gray-600">Designed and Developed with ❤️ by Harsha</p>
+          <p className=" text-right text-gray-600">Designed and Developed by Harsha</p>
           {/* <p className='mt-3 text-right text-gray-600'>&copy; 2025 Harsha Kamakshigari. All rights reserved.<br></br></p> */}
         </div>
 
-        {/* Designed and Developed Section */}
-        {/* <div className="mt-4 text-right text-gray-600">
-          <p>Designed and Developed with ❤️ by Harsha</p>
-        </div> */}
       </div>
     </footer>
   );
