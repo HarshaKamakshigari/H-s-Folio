@@ -1,46 +1,37 @@
-import React, { useState, useEffect, useRef } from 'react';
+// src/components/AnimatedCursor.js
+import React, { useEffect, useRef } from 'react';
 
-const CustomCursor = () => {
-  const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
-  const [cursorVisible, setCursorVisible] = useState(true);
+const AnimatedCursor = () => {
   const cursorRef = useRef(null);
 
+  // Handle mousemove event to move the animated gradient cursor
+  const handleMouseMove = (e) => {
+    if (cursorRef.current) {
+      const x = e.clientX;
+      const y = e.clientY;
+      cursorRef.current.style.transform = `translate3d(${x - 25}px, ${y - 25}px, 0)`; // Adjusted for centering
+    }
+  };
+
   useEffect(() => {
-    const updateCursorPosition = (e) => {
-      setCursorPosition({
-        x: e.clientX,
-        y: e.clientY,
-      });
-    };
-
-    const moveCursor = () => {
-      if (cursorRef.current) {
-        cursorRef.current.style.left = `${cursorPosition.x}px`;
-        cursorRef.current.style.top = `${cursorPosition.y}px`;
-      }
-      requestAnimationFrame(moveCursor); // Continuously update position for smooth animation
-    };
-
-    window.addEventListener('mousemove', updateCursorPosition);
-
-    moveCursor(); // Start moving cursor
+    document.addEventListener('mousemove', handleMouseMove);
 
     return () => {
-      window.removeEventListener('mousemove', updateCursorPosition);
+      document.removeEventListener('mousemove', handleMouseMove);
     };
-  }, [cursorPosition]);
+  }, []);
 
   return (
     <div
       ref={cursorRef}
-      className="absolute bg-red-500 rounded-full transition-all pointer-events-none transform -translate-x-1/2 -translate-y-1/2"
+      className="absolute w-32 h-32 bg-gradient-to-r from-blue-600 to-pink-600 rounded-full blur-3xl filter transition-all duration-300 pointer-events-none z-50"
       style={{
-        width: '20px',
-        height: '20px',
-        transition: 'all 0.2s ease-out', // Smooth transition for size and color changes
+        position: 'absolute',
+        left: '-999px', // Initially off-screen
+        top: '-999px',  // Initially off-screen
       }}
     ></div>
   );
 };
 
-export default CustomCursor;
+export default AnimatedCursor;
