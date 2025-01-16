@@ -83,7 +83,7 @@
 // export default Hero;
 import React, { useEffect, useState } from 'react';
 import Newpfp from './Newpfp.png';
-import './index.css'; // Ensure your Tailwind CSS is properly configured
+import './index.css'; 
 
 const Hero = () => {
   const [time, setTime] = useState('');
@@ -105,7 +105,7 @@ const Hero = () => {
   return (
     <div className="bg-gray-300 flex flex-col justify-center">
       {/* Line and time */}
-      <div className="mb-4 bg-gray-300 px-10"> {/* Reduced `mb-4` */}
+      <div className=" bg-gray-300 px-10"> {/* Reduced `mb-4` */}
         <h1 className="text-black font-SpaceGrotesk text-lg pb-2 font-semibold">
           Based in India | {time} <span className="text-red-600">.</span>
         </h1>
@@ -113,7 +113,7 @@ const Hero = () => {
       </div>
 
       {/* Main content */}
-      <div className="bg-gray-300 flex flex-col md:flex-row items-center justify-between px-10 space-y-4 md:space-y-0">
+      <div className="bg-gray-300 flex flex-col md:flex-row items-center justify-between px-10 ">
         {/* Text Content */}
         <div className="flex-1 ps-11">
           <h1 className="font-SpaceGrotesk text-black font-semibold text-6xl md:text-8xl leading-tight">
@@ -150,7 +150,7 @@ const Hero = () => {
         </div>
 
         {/* Picture */}
-        <div className="flex-1 flex justify-center">
+        <div className="flex-1 flex justify-center rotate-3">
           <img
             src={Newpfp}
             alt="Harsha Kamakshigari"
