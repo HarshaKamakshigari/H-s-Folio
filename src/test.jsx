@@ -1,80 +1,94 @@
 "use client";
 import React from "react";
 import { StickyScroll } from "./component/ui/StickyScroll";
-// import Image from "next/image";
 
 const content = [
   {
-    title: "Collaborative Editing",
+    title: "VigilX - Lightweight EDR",
     description:
-      "Work together in real time with your team, clients, and stakeholders. Collaborate on documents, share ideas, and make decisions quickly. With our platform, you can streamline your workflow and increase productivity.",
+      "A Python-based lightweight Endpoint Detection and Response tool that detects ransomware, malware, and brute-force SSH attacks on Linux. It features a minimal React dashboard for monitoring.",
     content: (
-      <div
-        className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--emerald-500))] flex items-center justify-center text-white">
-        Collaborative Editing
-      </div>
+      <a
+        href="/projects/vigilx"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--emerald-500))] flex items-center justify-center text-white rounded-lg transform transition-transform duration-300 hover:scale-105"
+      >
+        VigilX Project
+      </a>
     ),
   },
   {
-    title: "Real time changes",
+    title: "Group Smile Booth",
     description:
-      "See changes as they happen. With our platform, you can track every modification in real time. No more confusion about the latest version of your project. Say goodbye to the chaos of version control and embrace the simplicity of real-time updates.",
+      "An AI-powered photo booth using OpenCV for smile detection. Includes scoring and a blockchain-backed leaderboard for storing scores. Hosted on Vercel.",
     content: (
-    //   <div className="h-full w-full  flex items-center justify-center text-white">
-    //     <Image
-    //       src="/linear.webp"
-    //       width={300}
-    //       height={300}
-    //       className="h-full w-full object-cover"
-    //       alt="linear board demo" />
-    //   </div>
-    <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--emerald-500))] flex items-center justify-center text-white rounded-lg">
-    Card 1
-  </div>
+      <a
+        href="/projects/smilebooth"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--blue-500),var(--indigo-500))] flex items-center justify-center text-white rounded-lg transform transition-transform duration-300 hover:scale-105"
+      >
+        Smile Booth Project
+      </a>
     ),
   },
   {
-    title: "Version control",
+    title: "JobScript",
     description:
-      "Experience real-time updates and never stress about version control again. Our platform ensures that you're always working on the most recent version of your project, eliminating the need for constant manual updates. Stay in the loop, keep your team aligned, and maintain the flow of your work without any interruptions.",
+      "A job application management tool built using Flask for the backend and React for the frontend. Includes features like cover letter and resume generation based on user inputs.",
     content: (
-      <div
-        className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--orange-500),var(--yellow-500))] flex items-center justify-center text-white">
-        Version control
-      </div>
+      <a
+        href="/projects/jobscript"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--orange-500),var(--yellow-500))] flex items-center justify-center text-white rounded-lg transform transition-transform duration-300 hover:scale-105"
+      >
+        JobScript Project
+      </a>
     ),
   },
   {
-    title: "Running out of content",
+    title: "Sloud - Music Website",
     description:
-      "Experience real-time updates and never stress about version control again. Our platform ensures that you're always working on the most recent version of your project, eliminating the need for constant manual updates. Stay in the loop, keep your team aligned, and maintain the flow of your work without any interruptions.",
+      "A music website built using Wix Studios with a marketplace for selling band merchandise. Focused on user experience and optimized for fast loading and engagement.",
     content: (
-        <div className="w-full h-full bg-[linear-gradient(to_bottom_right,var(--red-500),var(--yellow-500))] flex items-center justify-center text-white rounded-lg">
-        Card 4
-      </div>
+      <a
+        href="/projects/sloud"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--red-500),var(--pink-500))] flex items-center justify-center text-white rounded-lg transform transition-transform duration-300 hover:scale-105"
+      >
+        Sloud Project
+      </a>
     ),
   },
   {
-    title: "Running out of content",
+    title: "Custom Linux Shell",
     description:
-      "Experience real-time updates and never stress about version control again. Our platform ensures that you're always working on the most recent version of your project, eliminating the need for constant manual updates. Stay in the loop, keep your team aligned, and maintain the flow of your work without any interruptions.",
+      "A custom Linux shell implemented in C. Supports basic shell operations, including running commands, I/O redirection, and piping.",
     content: (
-        <div className="w-full h-full bg-[linear-gradient(to_bottom_right,var(--red-500),var(--yellow-500))] flex items-center justify-center text-white rounded-lg">
-        Card 4
-      </div>
+      <a
+        href="/projects/linux-shell"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--green-500),var(--lime-500))] flex items-center justify-center text-white rounded-lg transform transition-transform duration-300 hover:scale-105"
+      >
+        Linux Shell Project
+      </a>
     ),
   },
 ];
+
 export function StickyScrollRevealDemo() {
   return (
-    (<div className="py-10 bg-gray-300 scrollbar-none">
-         <p className="text-black pl-10 pb-8 font-open-sans text-xl md:text-5xl font-semibold">
+    <div className="py-10 bg-gray-300 scrollbar-none">
+      <p className="text-black pl-10 pb-8 font-open-sans text-xl md:text-5xl font-semibold">
         Works<span className="text-red-600">.</span>
       </p>
       <div className="scrollbar-none">
-         <StickyScroll content={content} />
-         </div>
-     
-    </div>)
+        <StickyScroll content={content} />
+      </div>
+    </div>
   );
 }

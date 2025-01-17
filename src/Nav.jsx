@@ -47,7 +47,8 @@ const Nav = () => {
       </div>
 
       {/* Adding a gap between the nav and the line */}
-      <hr className="mt-5 pb-5 border-t-5 border-black" />
+      <hr className="mt-5 pb-5 border-t-2 border-black" />
+      
     </nav>
   );
 };

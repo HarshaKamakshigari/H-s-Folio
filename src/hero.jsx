@@ -150,11 +150,11 @@ const Hero = () => {
         </div>
 
         {/* Picture */}
-        <div className="flex-1 flex justify-center rotate-3">
+        <div className="flex-1 flex justify-center rotate-3 ">
           <img
             src={Newpfp}
             alt="Harsha Kamakshigari"
-            className="w-120 h-120 object-cover"
+            className="w-max h-auto object-cover"
           />
         </div>
       </div>
