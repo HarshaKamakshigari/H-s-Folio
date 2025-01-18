@@ -19,9 +19,9 @@ const content = [
     ),
   },
   {
-    title: "Group Smile Booth",
+    title: "Steganography Project",
     description:
-      "An AI-powered photo booth using OpenCV for smile detection. Includes scoring and a blockchain-backed leaderboard for storing scores. Hosted on Vercel.",
+      "Developed a steganography tool for embedding and extracting hidden messages in images. Enhanced the tool’s efficiency and optimized its performance for larger image files.",
     content: (
       <a
         href="/projects/smilebooth"
@@ -29,22 +29,22 @@ const content = [
         rel="noopener noreferrer"
         className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--blue-500),var(--indigo-500))] flex items-center justify-center text-white rounded-lg transform transition-transform duration-300 hover:scale-105"
       >
-        Smile Booth Project
+        Steganography Project
       </a>
     ),
   },
   {
-    title: "JobScript",
+    title: "Vortex",
     description:
-      "A job application management tool built using Flask for the backend and React for the frontend. Includes features like cover letter and resume generation based on user inputs.",
+    "Designed Vortex Fashion’s mobile interface, prioritizing user experience and visual appeal.Independently iterated designs based on user feedback and prototyping, ensuring optimal user experience.Optimized mobile site performance for fast loading and improved user engagement.",
     content: (
       <a
         href="/projects/jobscript"
         target="_blank"
         rel="noopener noreferrer"
-        className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--orange-500),var(--yellow-500))] flex items-center justify-center text-white rounded-lg transform transition-transform duration-300 hover:scale-105"
+        className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--orange-500),var(--yellow-500))] flex items-center justify-center text-white rounded-lg transform transition-transform duration-300 hover:scale-105 font-bold"
       >
-        JobScript Project
+        Vortex
       </a>
     ),
   },
@@ -59,7 +59,7 @@ const content = [
         rel="noopener noreferrer"
         className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--red-500),var(--pink-500))] flex items-center justify-center text-white rounded-lg transform transition-transform duration-300 hover:scale-105"
       >
-        Sloud Project
+        Sloud
       </a>
     ),
   },

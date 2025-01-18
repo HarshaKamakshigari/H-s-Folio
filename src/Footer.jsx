@@ -10,16 +10,16 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Social Links Section */}
           <div>
-            <h3 className="text-black text-xl font-semibold mb-4">Follow Me</h3>
+            <h3 className="text-black text-xl font-semibold mb-4">i'd love to chat about design, TV Shows, or good food! </h3>
             <ul className="flex space-x-4">
               <li>
                 <a
-                  href="https://github.com/HarshaKamakshigari"
+                  href="https://instagram.com/Harsha_Kamakshigari"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-700 hover:text-black transition"
                 >
-                  GitHub
+                  Instagram
                 </a>
               </li>
               <li>

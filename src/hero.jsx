@@ -79,7 +79,6 @@
 //     </div>
 //   );
 // };
-
 // export default Hero;
 import React, { useEffect, useState } from 'react';
 import Newpfp from './Newpfp.png';
